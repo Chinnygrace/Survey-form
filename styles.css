@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -99999999;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.description {
+font-size: medium;
+margin-top: 10px;
+}
+
+h1 {
+font-weight: 400;
+margin: 0;
+}
+.main {
+    background-color: rgb(40, 40, 72);
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 18px;
+    padding: 2.5em;
+}
+.details select {
+    display: block;
+    border-radius: 7px;
+}
+ .details input {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+button {
+display: block;
+font-size: medium;
+background-color: rgb(55,175,101);
+color: aliceblue;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.details input, button, .details select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+}
+    
